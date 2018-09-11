@@ -4,7 +4,6 @@
   "description": "Hmr plugin for dva.",
   "main": "lib/index.js",
   "scripts": {
-    "postinstall": "npm run build",
     "build": "rimraf lib && babel src --out-dir lib --ignore __tests__",
     "test": "NODE_ENV=test nyc mocha --no-timeouts",
     "debug": "mocha --require babel-register --no-timeouts",
